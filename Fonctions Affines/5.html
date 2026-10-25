@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a5276">
+<title>5. Tableau de valeurs</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'},options:{enableMenu:false}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{font-size:16px;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Tahoma,Arial,sans-serif;line-height:1.65;color:#222;margin:0;padding:12px;background:#f0f4f8;word-wrap:break-word;overflow-wrap:break-word;min-height:100vh;min-height:100dvh}
+.container{max-width:900px;margin:0 auto;background:#fff;padding:22px 20px;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.08);overflow:hidden}
+h2{color:#1a5276;background:#eaf2f8;padding:10px 14px;border-left:5px solid #1a5276;border-radius:4px;margin-top:26px;font-size:clamp(0.95rem,4vw,1.3rem);line-height:1.35;word-break:break-word}
+p,li{font-size:clamp(0.88rem,3.4vw,1.05rem);line-height:1.65}
+strong{color:#1a5276}
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:15px 0;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+table{border-collapse:collapse;width:100%;min-width:300px;background:#fff;font-size:clamp(0.75rem,3vw,1rem)}
+th,td{border:1px solid #ccc;padding:10px 8px;text-align:center;vertical-align:middle}
+th{background:#1a5276;color:#fff;font-size:clamp(0.75rem,2.9vw,0.95rem);font-weight:600}
+tr:nth-child(even){background:#f4f8fb}
+.conseil{background:#fef9e7;border-left:5px solid #f1c40f;padding:12px 16px;margin:20px 0;border-radius:4px;font-style:italic;font-size:clamp(0.85rem,3.2vw,1rem)}
+.open-link-container{text-align:center;margin:25px 0 20px}
+.open-link-btn{background:#2874a6;color:#fff;border:none;padding:12px 20px;font-size:1em;border-radius:8px;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,0.15);transition:background 0.2s ease,transform 0.1s ease;max-width:100%;white-space:normal;line-height:1.4;font-family:inherit}
+.open-link-btn:hover{background:#1a5276;transform:translateY(-1px)}
+.open-link-btn i{margin-right:8px}
+.footer{text-align:center;margin-top:30px;font-weight:bold;color:#1a5276;font-size:1em}
+@media(max-width:480px){html{font-size:15px}body{padding:8px}.container{padding:16px 12px;border-radius:10px}h2{padding:9px 12px;font-size:0.98rem}p,li{font-size:0.9rem}th,td{padding:7px 5px;font-size:0.76rem}.conseil{padding:10px 12px;font-size:0.85rem}.open-link-btn{padding:10px 14px;font-size:0.9em;width:100%}}
+@media print{body{background:#fff;padding:0}.container{box-shadow:none}.open-link-container{display:none}}
+.open-link-btn:focus-visible{outline:3px solid #f39c12;outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h2>V. Tableau de valeurs et représentation</h2>
+
+<p>Pour représenter une fonction affine, on peut établir un <strong>tableau de valeurs</strong> :</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+  <tr><th>\(x\)</th><th>\(-2\)</th><th>\(-1\)</th><th>\(0\)</th><th>\(1\)</th><th>\(2\)</th></tr>
+</thead>
+<tbody>
+  <tr><td>\(f(x) = 2x + 1\)</td><td>\(-3\)</td><td>\(-1\)</td><td>\(1\)</td><td>\(3\)</td><td>\(5\)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="conseil">
+💡 <strong>Remarque :</strong> Pour une fonction affine, les valeurs de \(f(x)\) augmentent (ou diminuent) de façon <strong>régulière</strong> : on ajoute toujours \(a\) quand \(x\) augmente de 1.
+</div>
+
+<p class="footer">Fin de la partie 5 — Bon courage les élèves ! 🎓</p>
+
+<div class="open-link-container">
+    <button class="open-link-btn" onclick="openHtmlPage()">
+        <i class="fas fa-window-restore"></i>
+        Si la page ne s'affiche pas correctement : Cliquez ici
+    </button>
+</div>
+
+<script>
+function openHtmlPage(){window.open(window.location.href,'_blank');}
+</script>
+
+</div>
+</body>
+</html>

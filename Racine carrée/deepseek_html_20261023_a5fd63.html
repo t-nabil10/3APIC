@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>2. Racine carrée d'un carré parfait</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script>
+  MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }, svg: { fontCache: 'global' } };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Tahoma, Arial, sans-serif; line-height: 1.6; color: #222; margin: 0; padding: 12px; background: #f0f4f8; word-wrap: break-word; overflow-wrap: break-word; }
+  .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 22px 20px; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); overflow: hidden; }
+  h2 { color: #1a5276; background: #eaf2f8; padding: 10px 14px; border-left: 5px solid #1a5276; border-radius: 4px; margin-top: 26px; font-size: clamp(1rem, 3.8vw, 1.3rem); line-height: 1.3; }
+  h3 { color: #2874a6; margin-top: 18px; font-size: clamp(0.95rem, 3.4vw, 1.1rem); }
+  p, li { font-size: clamp(0.9rem, 3.2vw, 1.05rem); }
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 15px 0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  table { border-collapse: collapse; width: 100%; min-width: 320px; background: #fff; font-size: clamp(0.8rem, 3vw, 1rem); }
+  th, td { border: 1px solid #ccc; padding: 10px 8px; text-align: center; }
+  th { background: #1a5276; color: #fff; font-size: clamp(0.8rem, 2.9vw, 0.95rem); }
+  tr:nth-child(even) { background: #f4f8fb; }
+  .formule { background: #fff8e1; border-left: 4px solid #f39c12; padding: 10px 14px; margin: 12px 0; font-size: clamp(0.95rem, 3.4vw, 1.15rem); text-align: center; border-radius: 4px; overflow-x: auto; }
+  .conseil { background: #fef9e7; border-left: 5px solid #f1c40f; padding: 12px 16px; margin: 20px 0; border-radius: 4px; font-style: italic; font-size: clamp(0.85rem, 3.2vw, 1rem); }
+  strong { color: #1a5276; }
+  .open-link-container { text-align: center; margin: 25px 0 20px; }
+  .open-link-btn { background: #2874a6; color: #fff; border: none; padding: 12px 20px; font-size: 1em; border-radius: 8px; cursor: pointer; box-shadow: 0 3px 8px rgba(0,0,0,0.15); transition: background 0.2s ease, transform 0.1s ease; max-width: 100%; white-space: normal; line-height: 1.4; font-family: inherit; }
+  .open-link-btn:hover { background: #1a5276; transform: translateY(-1px); }
+  .open-link-btn i { margin-right: 8px; }
+  .footer { text-align: center; margin-top: 30px; font-weight: bold; color: #1a5276; font-size: 1em; }
+  @media (max-width: 480px) { body { padding: 8px; } .container { padding: 16px 14px; border-radius: 10px; } h2 { padding: 8px 12px; } th, td { padding: 6px 4px; font-size: 0.78rem; } .open-link-btn { padding: 10px 14px; font-size: 0.9em; width: 100%; } }
+  @media print { body { background: #fff; padding: 0; } .container { box-shadow: none; } .open-link-container { display: none; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h2>2. Racine carrée d'un carré parfait</h2>
+
+<p>Un <strong>carré parfait</strong> est un nombre qui est le carré d'un entier. Sa racine carrée est un <strong>entier</strong>.</p>
+
+<div class="formule">\[ \sqrt{n^2} = n \quad \text{pour } n \geq 0 \]</div>
+
+<h3>Table des carrés parfaits</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>\(n\)</th><th>\(n^2\)</th><th>\(\sqrt{n^2}\)</th></tr></thead>
+<tbody>
+  <tr><td>1</td><td>1</td><td>1</td></tr>
+  <tr><td>2</td><td>4</td><td>2</td></tr>
+  <tr><td>3</td><td>9</td><td>3</td></tr>
+  <tr><td>4</td><td>16</td><td>4</td></tr>
+  <tr><td>5</td><td>25</td><td>5</td></tr>
+  <tr><td>6</td><td>36</td><td>6</td></tr>
+  <tr><td>7</td><td>49</td><td>7</td></tr>
+  <tr><td>8</td><td>64</td><td>8</td></tr>
+  <tr><td>9</td><td>81</td><td>9</td></tr>
+  <tr><td>10</td><td>100</td><td>10</td></tr>
+  <tr><td>11</td><td>121</td><td>11</td></tr>
+  <tr><td>12</td><td>144</td><td>12</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="conseil">
+💡 <strong>Astuce :</strong> Apprends par cœur les carrés parfaits de 1 à 12. Ils te seront très utiles pour simplifier les racines carrées.
+</div>
+
+<p class="footer">Fin de la partie 2 — Bon courage les élèves ! 🎓</p>
+
+<div class="open-link-container">
+    <button class="open-link-btn" onclick="openHtmlPage()">
+        <i class="fas fa-window-restore"></i>
+        Si la page ne s'affiche pas correctement : Cliquez ici
+    </button>
+</div>
+
+<script>
+function openHtmlPage() { window.open(window.location.href, '_blank'); }
+</script>
+
+</div>
+</body>
+</html>
